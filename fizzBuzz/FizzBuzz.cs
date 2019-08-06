@@ -1,20 +1,30 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace fizzBuzz
+namespace FizzBuzz
 {
     public class FizzBuzz
     {
         public string Get(int num)
         {
-            return null;
+            if (IsMultipleOf3(num))
+            {
+                return "Fizz";
+            }
+            if(num == 5)
+
+            {
+                return "Buzz";
+            }
+            return num.ToString();
         }
-
-        List<String> fizzBuzz = new List<String>();
-
+        private bool IsMultipleOf3(int numberToCheck)
+        {
+            return numberToCheck % 3 == 0;
+        }
+        
     }
-}
-
+}  
  
 
